@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   # Swift版本设置
   s.swift_version = '5.0'
   
-  # ================= 第三方依赖库 =================
+  # ================= 第三方依赖库 ================
  
   s.dependency 'OSETCoreSDK','>=6.6.5.2'
   s.dependency 'ToBid-iOS-RC'
