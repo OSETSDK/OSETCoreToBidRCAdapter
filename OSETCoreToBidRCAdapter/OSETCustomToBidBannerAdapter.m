@@ -91,6 +91,9 @@
     [self.bridge bannerAdDidClosed:self bannerView:bannerView];
 
 }
-
+- (void)bannerDidExposures:(id)banner{
+    WindmillLogDebug(@"OSET", @"%s", __func__);
+    [self.bridge bannerAdDidBecomeVisible:self bannerView:banner];
+}
 
 @end
