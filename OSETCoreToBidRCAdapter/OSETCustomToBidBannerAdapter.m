@@ -12,7 +12,7 @@
 @interface  OSETCustomToBidBannerAdapter()<OSETBannerAdDelegate>
 @property (nonatomic, weak) id<AWMCustomBannerAdapterBridge> bridge;
 @property (nonatomic,strong) OSETBannerAd *bannerAd;
-
+@property (nonatomic,strong)OSETBaseView * view;
 @property (nonatomic, assign) BOOL isReady;
 @end
 
@@ -73,6 +73,7 @@
     }];
     WindmillLogDebug(@"OSET", @"%s", __func__);
     self.isReady = YES;
+    self.view = view;
     [self.bridge bannerAd:self didLoad:view];
 }
 /// banner加载失败
