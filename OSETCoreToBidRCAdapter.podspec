@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OSETCoreToBidRCAdapter"
-  s.version      = "6.6.5.3"
+  s.version      = "6.6.5.4"
   s.summary      = "AdSet广告对接Tobid适配器"
   s.description  = <<-DESC
                     OSETSDK 是一个专业的广告聚合SDK，提供高效的广告展示和收益优化功能。
